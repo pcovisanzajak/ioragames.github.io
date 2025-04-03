@@ -1,0 +1,365 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #19191D;
+  color: #FFF;
+  line-height: 1.6;
+}
+
+/* Container Styling */
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+}
+.container
+{
+  max-width: 1875px;
+  margin: auto;
+  padding: 2px;
+  max-height: 150px;
+}
+
+.navbar ul li:last-child a{
+  
+  margin-left: 10px ;
+}
+
+.navbar ul li a i{
+  
+  margin-right: 10px ;
+}
+.container-sm
+{
+  max-width: 800px;
+  margin: auto;
+  padding: 2px;
+}
+/* Style for the search bar */
+.search-container {
+display: flex;
+align-items: center;
+position: relative;
+margin-left: 20px; /* Space between other navbar items */
+background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+border-radius: 20px; /* Rounded corners */
+padding: 5px;
+}
+
+#search-bar {
+padding: 8px 12px;
+font-size: 14px;
+border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+outline: none;
+width: 200px; /* Adjust width as needed */
+background-color: transparent; /* Transparent background */
+color: white; /* White text color */
+transition: width 0.3s ease;
+}
+
+#search-bar:focus {
+width: 250px; /* Expand when focused */
+border-color: #fff; /* Change border color to white on focus */
+}
+
+.search-button {
+background-color: transparent;
+border: none;
+color: #fff;
+font-size: 16px;
+position: absolute;
+right: 17px;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+.mainmenu .search-container {
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+border-radius: 20px; /* Rounded corners */
+padding: 5px;
+margin-right: 20px; /* Space between search bar and Log In button */
+}
+
+.search-button:hover {
+color: #707070;
+}
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.navbar ul {
+display: flex;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+.navbar .mainmenu ul{
+display: flex;
+align-items: center;
+flex-grow: 1;
+justify-content: flex-start
+  
+}
+.navbar ul li {
+list-style: none;
+margin-right: 20px; /* Space between menu items */
+}
+.navbar ul li a{
+padding: 10px 20px;
+display: block;
+font-weight: 600;
+transition: 0.5s;
+}
+.navbar ul li a:hover{
+  color: var(--primary-color);
+}
+
+
+.mainmenu {
+display: flex;
+align-items: center;
+flex-grow: 1;
+}
+
+.mainmenu ul {
+display: flex;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+.mainmenu ul li {
+list-style: none;
+margin-right: 20px; /* Space between menu items */
+}
+
+.button {
+margin-left: auto; /* Push the button to the far right */
+}
+
+.button a {
+padding: 10px 20px;
+background: var(--primary-color); /* Use your primary color */
+color: white;
+border-radius: 5px;
+font-weight: bold;
+text-decoration: none;
+transition: background 0.3s;
+}
+
+.button a:hover {
+background: var(--light-black);
+}
+
+.btn{
+  
+  display: inline-block;
+  padding: 13px 5px;
+  background: var(--light-black);
+  color:#FFF;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary{
+  background: var(--primary-color);
+  color: #FFF;
+}
+
+.btn-dark{
+  background: var(--dark);
+  color: #fff;
+}
+
+.btn-block{
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+.navbar.scrolled {
+  background: black;
+}
+
+/* Search Bar Styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+#search-bar {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  transition: width 0.3s ease;
+}
+
+#search-bar:focus {
+  width: 250px;
+  border-color: #fff;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-button:hover {
+  color: #707070;
+}
+
+/* Button Styling */
+.button a {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button a:hover {
+  background: var(--light-black);
+}
+
+/* News Section Styling */
+.news-intro {
+  text-align: center;
+  padding: 20px;
+  padding-top: 175px;
+  background: linear-gradient(to bottom, #232427, #19191D);
+}
+
+.news-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.news-intro p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-articles {
+  padding: 60px 20px;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 40px;
+  background: #1F1F23;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.news-item img {
+  width: 35%;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00B4D8;
+}
+
+.news-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.news-content .read-more {
+  color: #00B4D8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.news-content .read-more:hover {
+  color: #FFF;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1A1A1D;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .footer-socials {
+  margin-bottom: 10px;
+}
+
+footer .footer-socials a {
+  color: #FFF;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+footer .footer-socials a:hover {
+  color: #ffd700;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #888;
+}

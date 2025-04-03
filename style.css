@@ -1,0 +1,478 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color:  #707070;
+    --light-black:#171615;
+    --dark:#000;
+}
+body{
+  margin: 0;
+  padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.container
+{
+    max-width: 1875px;
+    margin: auto;
+    padding: 2px;
+    max-height: 150px;
+}
+
+.navbar ul li:last-child a{
+    
+    margin-left: 10px ;
+}
+
+.navbar ul li a i{
+    
+    margin-right: 10px ;
+}
+.container-sm
+{
+    max-width: 800px;
+    margin: auto;
+    padding: 2px;
+}
+/* Style for the search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 20px; /* Space between other navbar items */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 5px;
+}
+
+#search-bar {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+  outline: none;
+  width: 200px; /* Adjust width as needed */
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text color */
+  transition: width 0.3s ease;
+}
+
+#search-bar:focus {
+  width: 250px; /* Expand when focused */
+  border-color: #fff; /* Change border color to white on focus */
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.mainmenu .search-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 5px;
+  margin-right: 20px; /* Space between search bar and Log In button */
+}
+
+.search-button:hover {
+  color: #707070;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.navbar .mainmenu ul{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-start
+    
+}
+.navbar ul li {
+  list-style: none;
+  margin-right: 20px; /* Space between menu items */
+}
+.navbar ul li a{
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.navbar ul li a:hover{
+    color: var(--primary-color);
+}
+
+
+.mainmenu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.mainmenu ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.mainmenu ul li {
+  list-style: none;
+  margin-right: 20px; /* Space between menu items */
+}
+
+.button {
+  margin-left: auto; /* Push the button to the far right */
+}
+
+.button a {
+  padding: 10px 20px;
+  background: var(--primary-color); /* Use your primary color */
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button a:hover {
+  background: var(--light-black);
+}
+
+.btn{
+    
+    display: inline-block;
+    padding: 13px 5px;
+    background: var(--light-black);
+    color:#FFF;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: #FFF;
+}
+
+.btn-dark{
+    background: var(--dark);
+    color: #fff;
+}
+ 
+.btn-block{
+    display: block;
+    width: 100%;
+}
+.homepage-heading{
+    color: #fff;
+}
+
+#myVideo {
+  position: absolute; /* Fix the video to the background */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100vw; /* Set video width to 100% of the viewport width */
+  height: 100vh; /* Set video height to 100% of the viewport height */
+  object-fit: cover; /* Make sure the video covers the entire area without stretching */
+  z-index: -1; /* Ensure video stays behind the text */
+}
+
+.video-overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  height: 799px; /* Full height of the viewport */
+  padding-left: 5%; /* Optional: Adds padding on the left side */
+  z-index: 1; /* Ensure text is above the video */
+}
+
+.overlay-content {
+  color: white;
+  text-align: left; /* Align text to the left */
+  padding: 20px;
+  z-index: 1; /* Ensure text is above the video */
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.play-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ff4500;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.play-btn:hover {
+  background: #ff3300;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+.navbar.scrolled {
+  background: black;
+}
+
+
+
+/* News Section Styling */
+#news {
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+#news h2 {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+}
+
+#news article {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #2c2c2c; /* Lighter background for articles */
+  border-radius: 8px;
+}
+
+#news article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#news article p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Game Select Section Styling */
+.game-select-section {
+  margin-top: 0;
+  text-align: center;
+  padding: 2rem;
+  background-image: url(logo/backgroundgame.png); /* Darker than the typical background */
+  color: #fff;
+}
+
+.game-select-section h2 {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 40px; /* Increased spacing between items */
+  margin: 0 auto;
+  max-width: 1500px; /* Adjusted for larger width */
+}
+
+.game-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  height: 350px; /* Bigger height */
+}
+
+.game-logo {
+  width: 100%;
+  height: 100%; /* Ensures it fills the game item */
+  object-fit: cover; /* Crops while maintaining aspect ratio */
+  transition: all 0.3s ease-in-out;
+}
+
+.game-item:hover .game-logo {
+  transform: scale(1.1);
+  filter: brightness(0.7); /* Darkens the image */
+}
+
+.game-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .game-grid {
+      grid-template-columns: 1fr; /* Switch to 1 column for smaller screens */
+  }
+
+  .game-item {
+      height: 250px; /* Reduce height slightly for smaller screens */
+  }
+}
+video {
+  width: 100vw; /* Set video width to fill the entire viewport width */
+  height: auto; /* Maintain aspect ratio by automatically calculating the height */
+  max-height: 800px; /* Optional: Limit the maximum height to 70% of the viewport */
+  object-fit: cover; /* Ensures the video fills the space, cropping if necessary */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  padding: 20px;
+  z-index: 1; /* Places it above the video */
+}
+
+.footer {
+  background-color: #06061D; /* Dark background for the footer */
+  color: #ffffff;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700; /* Highlight for headings */
+}
+
+.footer p,
+.footer ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #ffd700;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #141E30;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  background-color: #ffd700;
+  color: #06061D;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #243B55;
+  padding-top: 1rem;
+  color: #dcdcdc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      grid-template-columns: 1fr; /* Stack sections vertically on small screens */
+  }
+}
